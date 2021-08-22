@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="fundo" id="fundo">
+        <div class="modal" id="modal">
+            <div class="headerModal">Subiu de nível! <i id="xzin" onclick="fechaModal()" class='bx bx-x'></i></div>
+
+
+            <div class="containerModal">
+                <div class="parabens">Parabéns!</div>
+                <div class="seila">
+                    <div class="imageModal"></div>
+                </div>
+                <div class="descRapida">A quantidade de ações voluntarias te levou ao nível 16!</div>
+                <div class="comp">
+                    <div class="linkedin"></div>Deseja compartilhar no LinkedIn? <i class='bx bx-share-alt'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="left">
+            <div class="logoPrimus" onclick="home()"></div>
+            <input placeholder="Buscar">
+        </div>
+        <div class="right">
+            <div class="optionsNav active">
+                <i class='bx bx-home'></i> <span>Home</span>
+            </div>
+            <div class="optionsNav">
+                <i class='bx bx-message-rounded'></i> <span>Mensagens</span>
+            </div>
+            <div class="optionsNav" onclick="notificacoes()">
+                <div class="bolinha">3</div>
+                <i class='bx bx-bell'></i><span>Notificações</span>
+            </div>
+
+            <div class="cardNotification" id="cardNotificacao">
+                <div class="notification" onclick="abrindoModal()">
+                    <div class="imageNotifications-first"></div>
+                    <div class="desc"><span>Amigos da Solidariedade</span> registrou sua presença, você ganhou 200
+                        pontos!</div>
+                </div>
+                <div class="notification">
+                    <div class="imageNotifications-second"></div>
+                    <div class="desc"><span>Ciranda Solidária</span> registrou sua presença, você ganhou 100
+                        pontos!</div>
+                </div>
+
+                <div class="notification">
+                    <div class="imageNotifications-third"></div>
+                    <div class="desc"><span>Companhia do Amor</span> registrou sua presença, você ganhou 50
+                        pontos!</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="right">
+            <div class="card profile">
+                <div class="background-cover">
+                </div>
+                <div onclick="perfil()">
+                    <img src="https://avatars.githubusercontent.com/u/56699770?v=4" class="profile_photo" />
+                </div>
+                <div class="card-content">
+                    <h2>Steph Henrique<small>Estudande de SI</small></h3>
+                        <div class="init_level">
+                            <div class="text">
+                                <p><i class='bx bx-bar-chart-alt-2'></i> Level</p> <span id="level">15</span>
+                            </div>
+
+                            <div class="text">
+                                <p><i class='bx bx-coin-stack'></i>Pontos</p> <span id="engajamento">300/400</span>
+                            </div>
+                        </div>
+
+                        <progress id="file" value="66" max="100"> </progress>
+                </div>
+            </div>
+            <div class="card recent">
+                <div class="title">
+                    Participação recente
+                </div>
+                <ul class="list">
+                    <li>
+                        <i class='bx bx-food-menu'></i> Sopão em guaianazes
+                    </li>
+                    <li>
+                        <i class='bx bx-food-menu'></i> Doação de roupas
+                    </li>
+                    <li>
+                        <i class='bx bx-food-menu'></i> Aulão de cálculo
+                    </li>
+
+                </ul>
+
+
+                <div class="groups">
+                    <div class="title">
+                        Grupos
+                    </div>
+                    <div class="list">
+                        <ul class="list">
+                            <li>
+                                <i class='bx bx-food-menu'></i> Sopão em guaianazes
+                            </li>
+                            <li>
+                                <i class='bx bx-food-menu'></i> Doação de roupas
+                            </li>
+                            <li>
+                                <i class='bx bx-food-menu'></i> Aulão de cálculo
+                            </li>
+
+                    </div>
+                </div>
+            </div>
+            <a class="btn_novo_item" style="margin-top: 20px;"><i class='bx bx-coin-stack'></i>Usar
+                pontos</a>
+
+
+        </div>
+        <div class="form">
+            <form>
+                <div class="title-main">Cadastro de ação</div>
+                <input placeholder="Título da sua ocorrência">
+                <input placeholder="Endereço">
+                <textarea
+                    placeholder="Digite aqui a descrição da ocorrência. Ex: quantas pessoas você precisa, o que é necessário para ajudar, etc..."
+                    cols="40" rows="5"></textarea>
+
+                <label
+                    style="margin-bottom: -43px; margin-left: 15px; color:#757575; position: absolute; top: 540px; font-size: 14px;">Selecione
+                    uma imagem para a ação</label>
+                <input style="padding-left: 55%;" type="file" class="form-control-file">
+                <input type="datetime-local" id="customFile">
+                <div class="button" id="buttonCad" class="button-submit" onclick="home()">Criar Ação</div>
+            </form>
+        </div>
+        <div>
+            <div class="menu-box block">
+                <h2 class="titular">FILTROS</h2>
+                <ul class="menu-box-menu">
+                    <li>
+                        <a class="menu-box-tab" href="#"><i class='bx bx-star'></i>Ações mais populares
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-box-tab" href="#"><i class='bx bx-location-plus'></i>Ações próximas de
+                            você
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="menu-box-tab" href="#"><i class='bx bx-category'></i>Ações categorizadas
+
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-box-tab" style="border-bottom: none;" href="#"><i class='bx bx-group'></i>Suas
+                            participações
+
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.3919752665347!2d-46.50263848538591!3d-23.482386964564853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6040e389220d%3A0xa1fd2f073b87bdea!2sEscola%20de%20Artes%2C%20Ci%C3%AAncias%20e%20Humanidades%20da%20Universidade%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1629606414540!5m2!1spt-BR!2sbr"
+                    style="border:0; width:100%; height:100%; border: 1px solid #dddce0;" allowfullscreen="true"
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js">
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="profile.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="fundo" id="fundo">
+        <div class="modal" id="modal">
+            <div class="headerModal">Subiu de nível! <i id="xzin" onclick="fechaModal()" class='bx bx-x'></i></div>
+
+
+            <div class="containerModal">
+                <div class="parabens">Parabéns!</div>
+                <div class="seila">
+                    <div class="imageModal"></div>
+                </div>
+                <div class="descRapida">A quantidade de ações voluntarias te levou ao nível 16!</div>
+                <div class="comp">
+                    <div class="linkedin"></div>Deseja compartilhar no LinkedIn? <i class='bx bx-share-alt'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="left">
+            <div class="logoPrimus" onclick="home()"></div>
+            <input placeholder="Buscar">
+        </div>
+        <div class="right">
+            <div class="optionsNav active">
+                <i class='bx bx-home'></i> <span>Home</span>
+            </div>
+            <div class="optionsNav">
+                <i class='bx bx-message-rounded'></i> <span>Mensagens</span>
+            </div>
+            <div class="optionsNav" onclick="notificacoes()">
+                <div class="bolinha">3</div>
+                <i class='bx bx-bell'></i><span>Notificações</span>
+            </div>
+
+            <div class="cardNotification" id="cardNotificacao">
+                <div class="notification" onclick="abrindoModal()">
+                    <div class="imageNotifications-first"></div>
+                    <div class="desc"><span>Amigos da Solidariedade</span> registrou sua presença, você ganhou 200
+                        pontos!</div>
+                </div>
+                <div class="notification">
+                    <div class="imageNotifications-second"></div>
+                    <div class="desc"><span>Ciranda Solidária</span> registrou sua presença, você ganhou 100
+                        pontos!</div>
+                </div>
+
+                <div class="notification">
+                    <div class="imageNotifications-third"></div>
+                    <div class="desc"><span>Companhia do Amor</span> registrou sua presença, você ganhou 50
+                        pontos!</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="gridProfile">
+        <div class="headerProfile">
+            <div class="capaFalsa"></div>
+            <div class="conteudoMain">
+                <div class="profileImg"><img src="https://avatars.githubusercontent.com/u/56699770?v=4"> </div>
+                <div class="title">
+                    <h2>Steph Henrique </h2> <span>Level 15 | 300 Pontos</span>
+                </div>
+
+            </div>
+        </div>
+
+        <h1><i class='bx bx-copy'></i> Minhas ações</h1>
+        <div class="container2">
+
+            <div class="main_card">
+
+                <div class="card">
+                    <div class="header">
+                        <div class="imageOng">
+                            <img src="https://tamarthi.com.br/wp-content/uploads/2019/12/como-abrir-uma-ong.jpg">
+                        </div>
+                        <div>
+                            <div class="name">ONG do seu zézinho</div>
+                            <div class="subtitle">Há duas horas</div>
+                        </div>
+                    </div>
+                    <div class="title-main">Amigos do Bem</div>
+                    <div class="subtitle"><i class='bx bx-location-plus'></i> Rua Feijão, 123</div>
+
+                    <div class="desc">
+                        Crianças carentes sofrem com a fome em SP. Comunidade do capão redondo sofre com a pandemia
+                        e isso
+                        se reflete em seus moradores mais carentes. Precisamos de apoio no financiamento para a
+                        compra de
+                        alimentos e voluntariado para a sua distribuição. #fomenuncamais #juntossomosprimus
+                    </div>
+                    <div class="imageMain">
+                        <img
+                            src="https://observatorio3setor.org.br/wp-content/uploads/2020/03/pobreza-banco-de-imagens-Pixabay-portal.jpg">
+                    </div>
+                    <div class="comentarios">
+                        <i class='bx bx-heart'></i> 70 curtidas
+                    </div>
+                    <div class="card_footer">
+                        <div class="icon">
+                            <i class='bx bx-like'></i> Curtir
+                        </div>
+                        <div class="icon">
+                            <i class='bx bx-message-rounded-detail'></i> Comentar
+                        </div>
+                        <div class="icon">
+                            <i class='bx bx-rocket'></i> Ajudar
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="margin-top: -40px;" class="card">
+                    <div class="header">
+                        <div class="imageOng">
+                            <img src="https://tamarthi.com.br/wp-content/uploads/2019/12/como-abrir-uma-ong.jpg">
+                        </div>
+                        <div>
+                            <div class="name">Amigos do Bem</div>
+                            <div class="subtitle">Há duas horas</div>
+                        </div>
+                    </div>
+                    <div class="title-main">Crianças carentes sofrem com a fome em SP.</div>
+                    <div class="subtitle"><i class='bx bx-location-plus'></i>Rua Raiz da Serra 182, São Paulo</div>
+
+                    <div class="desc">
+                        Crianças carentes sofrem com a fome em SP. Comunidade do capão redondo sofre com a pandemia
+                        e isso
+                        se reflete em seus moradores mais carentes. Precisamos de apoio no financiamento para a
+                        compra de
+                        alimentos e voluntariado para a sua distribuição. #fomenuncamais #juntossomosprimus
+                    </div>
+                    <div class="imageMain">
+                        <img
+                            src="https://observatorio3setor.org.br/wp-content/uploads/2020/03/pobreza-banco-de-imagens-Pixabay-portal.jpg">
+                    </div>
+                    <div class="comentarios">
+                        <i class='bx bx-heart'></i> 70 curtidas
+                    </div>
+                    <div class="card_footer">
+                        <div class="icon">
+                            <i class='bx bx-like'></i> Curtir
+                        </div>
+                        <div class="icon">
+                            <i class='bx bx-rocket'></i> Ajudar
+                        </div>
+                        <div class="icon">
+                            <i class='bx bx-message-rounded-detail'></i> Comentar
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card" style="margin-top: 10px;">
+                    <div class="header">
+                        <div class="imageOng">
+                            <img src="https://avatars.githubusercontent.com/u/56699770?v=4">
+                        </div>
+                        <div>
+                            <div class="name">Steph Henrique</div>
+                            <div class="subtitle">Há alguns minutos</div>
+                        </div>
+                    </div>
+                    <div class="title-main">Reformar parque público</div>
+                    <div class="subtitle"><i class='bx bx-location-plus'></i>Rua Lagoa de Esmoriz, 281</div>
+
+                    <div class="desc">
+                        Preciso de ajuda para reformar um parque público aqui da rua, visto que muitas crianças não tem
+                        onde brincar e na região próxima não possuímos um ambiente agradável de lazer.
+                    </div>
+                    <div class="imageMain">
+                        <img src="./img/caso1.jpg">
+                    </div>
+                    <div class="comentarios">
+                        <i class='bx bx-heart'></i> 70 curtidas
+                    </div>
+                    <div class="card_footer">
+                        <div class="icon">
+                            <i class='bx bx-like'></i> Curtir
+                        </div>
+                        <div class="icon">
+                            <i class='bx bx-rocket'></i> Ajudar
+                        </div>
+                        <div class="icon">
+                            <i class='bx bx-message-rounded-detail'></i> Comentar
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="header">
+
+                        <div class="imageOng">
+                            <img
+                                src="http://whatsrel.com.br/wp-content/uploads/2018/08/imagem-sit-op%C3%A7%C3%A3o-2..jpg">
+                        </div>
+                        <div>
+                            <div class="name">Ciranda do Saber</div>
+                            <div class="subtitle">Há alguns minutos</div>
+                        </div>
+                    </div>
+                    <div class="title-main">Estudantes precisando livros e materiais escolares</div>
+                    <div class="subtitle"><i class='bx bx-location-plus'></i>Rua Dulce dos Santos 271, São Paulo
+                    </div>
+
+                    <div class="desc">
+                        Estudantes da rede pública de ensino estão precisando de apoio no começo aos estudos.
+                        Precisamos de
+                        livros didáticos ou literários e de materiais de sala de aula, como lápis, caneta, hidrocor,
+                        etc...
+                        Por favor ajudem, é muito importante!
+                        #escola #ajudar #primusHelp </div>
+                    <div class="imageMain">
+                        <img
+                            src="https://images-ext-1.discordapp.net/external/0EF1eJ1nUX4IBzimC-fij2LFtB5-u79OkiOAclLI_V4/https/lunetas.com.br/wp-content/uploads/2017/07/doar-livros.jpg?width=400&height=225">
+                    </div>
+                    <div class="comentarios">
+                        <i class='bx bx-heart'></i> 70 curtidas
+                    </div>
+                    <div class="card_footer">
+                        <div class="icon">
+                            <i class='bx bx-like'></i> Curtir
+                        </div>
+                        <div class="icon">
+                            <i class='bx bx-rocket'></i> Ajudar
+                        </div>
+                        <div class="icon">
+                            <i class='bx bx-message-rounded-detail'></i> Comentar
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="header">
+                        <div class="imageOng">
+                            <img
+                                src="https://nossacausa.com/wp-content/uploads/2019/04/concept-of-charity-and-donation-give-and-share-your-love-to-people-vector-id1050902156.jpg">
+                        </div>
+                        <div>
+                            <div class="name">Companhia do agasalho</div>
+                            <div class="subtitle">Há quatro horas</div>
+                        </div>
+                    </div>
+                    <div class="title-main">Moradores de rua passando fome e frio.</div>
+                    <div class="subtitle"><i class='bx bx-location-plus'></i>Rua Raiz da Serra 182, São Paulo</div>
+
+                    <div class="desc">
+                        Eles estão precisando de apoio com comida e roupas de frio para se aquecerem, são cerca de
+                        20
+                        pessoas necessitadas. Toda ajuda é bem vinda. #ajudar #primusHelp #solidariedade
+                    </div>
+                    <div class="imageMain">
+                        <img src="https://catracalivre.com.br/wp-content/uploads/2020/05/morador-de-rua-2.jpg">
+                    </div>
+                    <div class="comentarios">
+                        <i class='bx bx-heart'></i> 70 curtidas
+                    </div>
+                    <div class="card_footer">
+                        <div class="icon">
+                            <i class='bx bx-like'></i> Curtir
+                        </div>
+                        <div class="icon">
+                            <i class='bx bx-message-rounded-detail'></i> Comentar
+                        </div>
+                        <div class="icon">
+                            <i class='bx bx-rocket'></i> Ajudar
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div>
+                <a class="btn_novo_item" onclick="mudarDeTela()"><i class='bx bxs-edit'></i>Criar
+                    ação</a>
+                <div class="menu-box block">
+                    <h2 class="titular">FILTROS</h2>
+                    <ul class="menu-box-menu">
+                        <li>
+                            <a class="menu-box-tab" href="#"><i class='bx bx-star'></i>Ações mais populares
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu-box-tab" href="#"><i class='bx bx-location-plus'></i>Ações próximas de
+                                você
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="menu-box-tab" href="#"><i class='bx bx-category'></i>Ações categorizadas
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu-box-tab" style="border-bottom: none;" href="#"><i
+                                    class='bx bx-group'></i>Suas
+                                participações
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.3919752665347!2d-46.50263848538591!3d-23.482386964564853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6040e389220d%3A0xa1fd2f073b87bdea!2sEscola%20de%20Artes%2C%20Ci%C3%AAncias%20e%20Humanidades%20da%20Universidade%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1629606414540!5m2!1spt-BR!2sbr"
+                        style="border:0; width:100%; height:100%; border: 1px solid #dddce0;" allowfullscreen="true"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js">
+
+    </script>
+</body>
+
+</html>

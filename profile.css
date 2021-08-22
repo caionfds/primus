@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	position: relative;
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #F3F2EF;
+	overflow: hidden;
+}
+
+.container2{
+	display: grid;
+	grid-template-columns:43vw 16vw ;
+	grid-gap: 40px;
+	margin-top: 20px;
+}
+
+.headerProfile{
+    width: 59vw + 40px;
+    margin-top: 100px;
+}
+
+.capaFalsa{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(45deg, #9966cc, #400f71);
+    border-radius: 8px 8px 0 0;
+}
+.conteudoMain{
+    background-color: #fff;
+    padding: 40px;
+    padding-bottom: 0px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.profileImg img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #f3f2ef;
+box-shadow: 3px 3px 20px rgb(0 0 0 / 50%);
+    position: absolute;
+    top: 130px;
+}
+
+.title{
+    margin-top: -85px;
+    margin-left: 120px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+h2{
+
+    font-size: 25px;
+    font-weight: 600;
+    color:#fff;
+}
+
+.title span{
+    text-align: right;
+    color: #fff;
+    margin-top: 10px;
+}
+
+h1{
+    font-size: 25px;
+    margin-top: 40px;
+    color: #461577;
+    
+}
